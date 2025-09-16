@@ -2,7 +2,8 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/Pagina-web-Origamis/Logo Origamis.png" />
+    <!-- Favicon: usa BASE_URL para que funcione en GitHub Pages -->
+    <link rel="icon" type="image/png" href="${import.meta.env.BASE_URL}logo-origamis.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- SEO Meta Tags -->
@@ -13,20 +14,20 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-     <meta property="og:url" content="https://origamis.cl/" />
+    <meta property="og:url" content="https://origamis.cl/" />
     <meta property="og:title" content="Origamis - Salud Mental Multidisciplinaria" />
     <meta property="og:description" content="Transformamos la realidad hacia una vida más consciente, resiliente y conectada. +7 años de experiencia, +10,000 atenciones clínicas exitosas." />
-     <meta property="og:image" content="https://origamis.cl/og-image.jpg" />
+    <meta property="og:image" content="https://origamis.cl/og-image.jpg" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-     <meta property="twitter:url" content="https://origamis.cl/" />
+    <meta property="twitter:url" content="https://origamis.cl/" />
     <meta property="twitter:title" content="Origamis - Salud Mental Multidisciplinaria" />
     <meta property="twitter:description" content="Transformamos la realidad hacia una vida más consciente, resiliente y conectada con enfoque multidisciplinario." />
-     <meta property="twitter:image" content="https://origamis.cl/og-image.jpg" />
+    <meta property="twitter:image" content="https://origamis.cl/og-image.jpg" />
     
     <!-- Canonical URL -->
-     <link rel="canonical" href="https://origamis.cl/" />
+    <link rel="canonical" href="https://origamis.cl/" />
     
     <!-- Additional SEO -->
     <meta name="robots" content="index, follow" />
@@ -44,11 +45,11 @@
       "@type": "MedicalOrganization",
       "name": "Origamis",
       "description": "Espacio multidisciplinario de salud mental basada en neurociencias, con más de 7 años transformando vidas hacia una existencia más consciente y resiliente",
-       "url": "https://origamis.cl",
-       "logo": "https://origamis.cl/logo.png",
-       "image": "https://origamis.cl/og-image.jpg",
-       "telephone": "+56930179724",
-       "email": "contacto@origamis.cl",
+      "url": "https://origamis.cl",
+      "logo": "https://origamis.cl/logo-origamis.png",
+      "image": "https://origamis.cl/logo-origamis.png",
+      "telephone": "+56930179724",
+      "email": "contacto@origamis.cl",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Dirección en Chile",
@@ -64,10 +65,7 @@
         "Terapia Corporal",
         "Neurociencias Aplicadas"
       ],
-      "areaServed": {
-        "@type": "Place",
-        "name": "Chile"
-      },
+      "areaServed": { "@type": "Place", "name": "Chile" },
       "sameAs": [
         "https://www.facebook.com/origamis",
         "https://www.linkedin.com/company/origamis",
@@ -80,5 +78,6 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- En desarrollo Vite usa /src/main.tsx; en producción lo reemplaza por /assets/*.js -->
   </body>
 </html>
