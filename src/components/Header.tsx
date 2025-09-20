@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Menu, X, Brain, MessageCircle } from 'lucide-react';
+import { Menu, X, Brain, MessageCircle, Sparkles } from 'lucide-react';
+import OrigamisLogo from './OrigamisLogo';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,33 +13,25 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img 
-              src="/Logo Origamis.png" 
-              alt="Origamis Logo" 
-              className="h-12 w-auto"
-            />
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900">Origamis</h1>
-              <p className="text-sm text-blue-600">Neurociencia & Bienestar</p>
-            </div>
+          <div className="flex items-center">
+            <OrigamisLogo showText={true} />
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#inicio" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#inicio" className="text-gray-700 hover:text-blue-600 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md px-2 py-1" aria-label="Ir a la sección de inicio">
               Inicio
             </a>
-            <a href="#servicios" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#servicios" className="text-gray-700 hover:text-blue-600 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md px-2 py-1" aria-label="Ver nuestros servicios de salud mental">
               Servicios
             </a>
-            <a href="#equipo" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#equipo" className="text-gray-700 hover:text-blue-600 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md px-2 py-1" aria-label="Conocer nuestro equipo profesional">
               Quiénes Somos
             </a>
-            <a href="#testimonios" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#testimonios" className="text-gray-700 hover:text-blue-600 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md px-2 py-1" aria-label="Leer testimonios de nuestros pacientes">
               Testimonios
             </a>
-            <a href="#contacto" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#contacto" className="text-gray-700 hover:text-blue-600 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md px-2 py-1" aria-label="Contactar con Origamis">
               Contacto
             </a>
           </nav>
@@ -74,16 +67,16 @@ const Header = () => {
               <a href="#inicio" onClick={closeMenu} className="text-gray-700 hover:text-blue-600 transition-colors font-medium px-2 py-1">
                 Inicio
               </a>
-              <a href="#servicios" onClick={closeMenu} className="text-gray-700 hover:text-blue-600 transition-colors font-medium px-2 py-1">
+              <a href="#servicios" onClick={closeMenu} className="text-gray-700 hover:text-blue-600 transition-colors font-medium px-2 py-1" aria-label="Ver servicios de salud mental">
                 Servicios
               </a>
-              <a href="#equipo" onClick={closeMenu} className="text-gray-700 hover:text-blue-600 transition-colors font-medium px-2 py-1">
+              <a href="#equipo" onClick={closeMenu} className="text-gray-700 hover:text-blue-600 transition-colors font-medium px-2 py-1" aria-label="Conocer nuestro equipo">
                 Quiénes Somos
               </a>
-              <a href="#testimonios" onClick={closeMenu} className="text-gray-700 hover:text-blue-600 transition-colors font-medium px-2 py-1">
+              <a href="#testimonios" onClick={closeMenu} className="text-gray-700 hover:text-blue-600 transition-colors font-medium px-2 py-1" aria-label="Leer testimonios">
                 Testimonios
               </a>
-              <a href="#contacto" onClick={closeMenu} className="text-gray-700 hover:text-blue-600 transition-colors font-medium px-2 py-1">
+              <a href="#contacto" onClick={closeMenu} className="text-gray-700 hover:text-blue-600 transition-colors font-medium px-2 py-1" aria-label="Contactar">
                 Contacto
               </a>
               <a
@@ -94,7 +87,7 @@ const Header = () => {
                 className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors font-semibold mt-4 text-left flex items-center"
               >
                 <MessageCircle className="h-5 w-5 mr-2" />
-                Contactar por WhatsApp
+                😊 Hablemos
               </a>
             </div>
           </div>

@@ -16,7 +16,7 @@ const Hero = () => {
       service: "Terapia de Pareja"
     },
     {
-      url: "/2.png",
+      url: "https://www.origamis.cl/wp-content/uploads/2025/09/Organizacional.png",
       alt: "Equipo empresarial en taller de bienestar - Consultoría organizacional",
       service: "Consultoría Empresarial"
     },
@@ -60,12 +60,12 @@ const Hero = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600"> consciente y resiliente</span>
             </h1>
             
-            <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed text-left">
+            <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed text-left" role="text">
               En Origamis creemos que el bienestar se construye paso a paso, juntos.
               Acompañamos a personas, parejas y organizaciones a recuperar la calma, fortalecer vínculos y crear espacios donde la vida y el trabajo se sientan más humanos.
             </p>
             
-            <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed text-left">
+            <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed text-left" role="text">
               Con el apoyo de la psicología, la neurociencia y prácticas de autocuidado, entregamos herramientas profundas que ayudan a reducir el estrés, prevenir el desgaste y cultivar relaciones más sanas y significativas.
             </p>
 
@@ -81,7 +81,6 @@ const Hero = () => {
                 <div className="bg-emerald-100 p-2 rounded-lg mr-3">
                   <Heart className="h-5 w-5 text-emerald-600" />
                 </div>
-                <span className="text-sm sm:text-base text-gray-700 font-medium">+1,000 Terapias Exitosas</span>
               </div>
             </div>
 
@@ -91,7 +90,8 @@ const Hero = () => {
                 href="https://www.origamis.cl/tamizaje/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center text-sm sm:text-base"
+                className="bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center text-sm sm:text-base"
+                aria-label="Realizar tamizaje emocional gratuito"
               >
                 Completa tu Tamizaje Emocional
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -100,7 +100,8 @@ const Hero = () => {
                 href="https://wa.me/56930179724?text=Hola%20Origamis%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20tratamientos%20de%20salud%20mental%20basados%20en%20neurociencias.%20%C2%BFPodr%C3%ADan%20brindarme%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20pueden%20ayudarme%3F"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-green-500 text-green-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-green-500 hover:text-white transition-all duration-300 font-semibold flex items-center justify-center text-sm sm:text-base"
+                className="border-2 border-green-500 text-green-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-green-500 hover:text-white focus:outline-none focus:ring-4 focus:ring-green-300 transition-all duration-300 font-semibold flex items-center justify-center text-sm sm:text-base"
+                aria-label="Contactar por WhatsApp para consulta gratuita"
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Escribir por WhatsApp

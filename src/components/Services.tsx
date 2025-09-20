@@ -44,40 +44,42 @@ const Services = () => {
             <Target className="h-4 w-4 mr-2" />
             Nuestros Servicios
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6" id="servicios-heading">
             Servicios
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600"> Multidisciplinarios</span>
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto" role="text">
             Integramos saberes multidisciplinarios con más de 7 años de experiencia comprobada, 
             ofreciendo tratamientos integrales que generan cambios profundos y sostenibles en el bienestar mental.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list" aria-labelledby="servicios-heading">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group"
+              className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group focus-within:ring-2 focus-within:ring-blue-500"
+              role="listitem"
+              tabIndex="0"
             >
               {/* Icon */}
-              <div className="bg-gradient-to-br from-blue-500 to-emerald-500 p-4 rounded-xl text-white mb-6 inline-block group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-gradient-to-br from-blue-500 to-emerald-500 p-4 rounded-xl text-white mb-6 inline-block group-hover:scale-110 transition-transform duration-300" aria-hidden="true">
                 {service.icon}
               </div>
 
               {/* Content */}
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors" role="heading" aria-level="3">
                 {service.title}
               </h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed" role="text">
                 {service.description}
               </p>
 
               {/* Features */}
-              <ul className="space-y-2">
+              <ul className="space-y-2" role="list" aria-label={`Características de ${service.title}`}>
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-xs sm:text-sm text-gray-700">
+                  <li key={featureIndex} className="flex items-center text-xs sm:text-sm text-gray-700" role="listitem">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                     {feature}
                   </li>
@@ -132,7 +134,8 @@ const Services = () => {
               href="https://www.origamis.cl/tamizaje/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-gray-100 transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base sm:text-lg"
+              className="inline-block bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-white/50 transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base sm:text-lg"
+              aria-label="Comenzar tamizaje emocional gratuito - 5 minutos"
             >
               🎯 ¡Comenzar mi Tamizaje Ahora!
             </a>

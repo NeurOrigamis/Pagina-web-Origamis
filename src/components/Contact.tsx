@@ -90,11 +90,11 @@ Enviado desde el formulario de contacto de origamis.cl
             <MessageCircle className="h-4 w-4 mr-2" />
             Contacto
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6" id="contacto-heading">
             Inicia tu
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600"> Transformación</span>
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto" role="text">
             Estamos aquí para acompañarte en tu camino hacia el bienestar mental. 
             Contáctanos para una consulta personalizada y descubre cómo podemos ayudarte.
           </p>
@@ -104,11 +104,11 @@ Enviado desde el formulario de contacto de origamis.cl
           {/* Contact Info */}
           <div className="lg:col-span-3 space-y-8">
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Información de Contacto</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6" role="heading" aria-level="3">Información de Contacto</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6" role="list" aria-labelledby="contacto-heading">
                 {contactInfo.map((item, index) => (
                   <div key={index} className="flex items-start space-x-3 sm:space-x-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div className="bg-gradient-to-br from-blue-500 to-emerald-500 p-3 rounded-lg text-white flex-shrink-0">
+                    <div className="bg-gradient-to-br from-blue-500 to-emerald-500 p-3 rounded-lg text-white flex-shrink-0" aria-hidden="true">
                       {item.icon}
                     </div>
                     <div>
@@ -123,13 +123,14 @@ Enviado desde el formulario de contacto de origamis.cl
 
             {/* Quick Actions */}
             <div className="bg-gradient-to-br from-blue-600 to-emerald-600 rounded-2xl p-4 sm:p-6 text-white">
-              <h3 className="text-lg sm:text-xl font-bold mb-4">Acciones Rápidas</h3>
+              <h3 className="text-lg sm:text-xl font-bold mb-4" role="heading" aria-level="3">Acciones Rápidas</h3>
               <div className="space-y-3">
                 <a 
                   href="https://saludorigamis.site.agendapro.com/cl/sucursal/352735"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-white/20 hover:bg-white/30 p-3 rounded-lg transition-colors flex items-center text-sm sm:text-base"
+                  className="w-full bg-white/20 hover:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 p-3 rounded-lg transition-colors flex items-center text-sm sm:text-base"
+                  aria-label="Agendar cita de psiquiatría online"
                 >
                   <Calendar className="h-5 w-5 mr-3" />
                   Agendar Psiquiatría Online
@@ -139,7 +140,8 @@ Enviado desde el formulario de contacto de origamis.cl
                   href="https://wa.me/56930179724?text=Hola%20Origamis%2C%20me%20gustar%C3%ADa%20hablar%20para%20resolver%20algunas%20dudas%20sobre%20los%20tratamientos.%20%C2%BFPodr%C3%ADan%20contactarme%20telef%C3%B3nicamente%3F"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-white/20 hover:bg-white/30 p-3 rounded-lg transition-colors flex items-center text-sm sm:text-base"
+                  className="w-full bg-white/20 hover:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 p-3 rounded-lg transition-colors flex items-center text-sm sm:text-base"
+                  aria-label="Solicitar contacto telefónico"
                 >
                   <Phone className="h-5 w-5 mr-3" />
                   Contacto Telefónico
@@ -148,7 +150,8 @@ Enviado desde el formulario de contacto de origamis.cl
                   href="https://wa.me/56930179724?text=Hola%20Origamis%2C%20represento%20a%20una%20empresa%20y%20estamos%20interesados%20en%20sus%20servicios%20de%20consultor%C3%ADa%20organizacional%20y%20programas%20de%20bienestar%20laboral.%20%C2%BFPodr%C3%ADan%20proporcionarnos%20informaci%C3%B3n%20detallada%3F"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-white/20 hover:bg-white/30 p-3 rounded-lg transition-colors flex items-center text-sm sm:text-base"
+                  className="w-full bg-white/20 hover:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 p-3 rounded-lg transition-colors flex items-center text-sm sm:text-base"
+                  aria-label="Consultar servicios de consultoría empresarial"
                 >
                   <Users className="h-5 w-5 mr-3" />
                   Consultoría Empresarial

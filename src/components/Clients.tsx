@@ -22,11 +22,68 @@ const Clients = () => {
 
         {/* Clients Grid */}
         <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 lg:p-12">
-          <img 
-            src="/Captura de pantalla 2025-09-16 a la(s) 19.30.46 copy.png" 
-            alt="Logos de clientes: Servicio Civil, INJUV, ChileCompra, Ministerio de Educación, ADN 91.7, ENAP, ACHS, Trabajador, COPEC, Roche, Sanofi, UDLA, Pontificia Universidad Católica de Chile, Universidad Andrés Bello, Universidad San Sebastián, INACAP, Subsecretaría de Evaluación Social, Colegio Médico de Chile, SNA Sociedad Nacional de Agricultura, SQM"
-            className="w-full h-auto object-contain max-w-5xl mx-auto"
-          />
+          <div className="overflow-hidden">
+            <div className="flex animate-scroll-infinite">
+              {/* Original set of images */}
+              <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
+                <img 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/09/3-scaled.png" 
+                  alt="Logos de clientes - Grupo 1"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
+                <img 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/09/4-scaled.png" 
+                  alt="Logos de clientes - Grupo 2"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
+                <img 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/09/5-scaled.png" 
+                  alt="Logos de clientes - Grupo 3"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
+                <img 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/09/6-scaled.png" 
+                  alt="Logos de clientes - Grupo 4"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              {/* Duplicate set for infinite seamless loop */}
+              <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
+                <img 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/09/3-scaled.png" 
+                  alt="Logos de clientes - Grupo 1"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
+                <img 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/09/4-scaled.png" 
+                  alt="Logos de clientes - Grupo 2"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
+                <img 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/09/5-scaled.png" 
+                  alt="Logos de clientes - Grupo 3"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
+                <img 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/09/6-scaled.png" 
+                  alt="Logos de clientes - Grupo 4"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Stats */}

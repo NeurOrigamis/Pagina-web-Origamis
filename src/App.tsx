@@ -26,7 +26,7 @@ function App() {
         href="https://wa.me/56930179724"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 bg-green-500 hover:bg-green-600 text-white p-3 sm:p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 z-50 group"
+        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-4 focus:ring-green-300 text-white p-3 sm:p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 z-50 group"
         aria-label="Contactar por WhatsApp"
       >
         <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
