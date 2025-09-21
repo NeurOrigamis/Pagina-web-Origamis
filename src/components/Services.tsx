@@ -72,7 +72,7 @@ const Services = () => {
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors" role="heading" aria-level="3">
                 {service.title}
               </h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed" role="text">
+              <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed text-justify" role="text">
                 {service.description}
               </p>
 
@@ -103,7 +103,7 @@ const Services = () => {
                 ¿Te has preguntado cómo está realmente tu salud emocional? 🤔 
                 <br />
                 Nuestro <strong>Tamizaje Emocional Inteligente</strong> te ayudará a conocerte mejor en solo 5 minutos. 
-                Es como un "check-up\" para tu mente, pero más divertido y revelador. ✨
+                Es como un "check-up" para tu mente, pero más divertido y revelador. ✨
               </p>
               
               <div className="bg-white/20 backdrop-blur-sm rounded-xl p-3 sm:p-4 mb-6">
@@ -130,15 +130,15 @@ const Services = () => {
               <p className="text-blue-100 mb-6 text-center italic text-sm sm:text-base">
                 "El primer paso hacia el cambio es conocer dónde estás ahora" 💫
               </p>
-            <a 
-              href="https://www.origamis.cl/tamizaje/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-white/50 transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base sm:text-lg"
-              aria-label="Comenzar tamizaje emocional gratuito - 5 minutos"
-            >
-              🎯 ¡Comenzar mi Tamizaje Ahora!
-            </a>
+              <a 
+                href="https://www.origamis.cl/tamizaje/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-white/50 transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base sm:text-lg"
+                aria-label="Comenzar tamizaje emocional gratuito - 5 minutos"
+              >
+                🎯 ¡Comenzar mi Tamizaje Ahora!
+              </a>
             </div>
           </div>
         </div>

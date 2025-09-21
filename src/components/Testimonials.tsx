@@ -64,7 +64,7 @@ const Testimonials = () => {
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Lo que dicen nuestros
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-blue-600"> Pacientes</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-blue-600"> Pacientes y Clientes</span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Más de 500 personas han transformado su bienestar mental con nuestros tratamientos 
@@ -92,7 +92,7 @@ const Testimonials = () => {
               </div>
 
               {/* Text */}
-              <p className="text-sm sm:text-base text-gray-700 mb-6 leading-relaxed italic">
+              <p className="text-sm sm:text-base text-gray-700 mb-6 leading-relaxed italic text-justify">
                 "{testimonial.text}"
               </p>
 

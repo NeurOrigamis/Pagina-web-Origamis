@@ -39,7 +39,7 @@ const Team = () => {
     },
     {
       icon: <Brain className="h-6 w-6" />,
-      title: "Innovación Científica",
+      title: "Innovación",
       description: "Aplicamos los últimos avances en neurociencias e inteligencia artificial para optimizar los resultados terapéuticos."
     },
     {
@@ -86,7 +86,7 @@ const Team = () => {
                 {area.title}
               </h3>
               <p className="text-sm sm:text-base text-blue-600 font-semibold mb-4">{area.specialization}</p>
-              <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed">{area.description}</p>
+              <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed text-justify">{area.description}</p>
 
               {/* Expertise */}
               <div className="space-y-2">

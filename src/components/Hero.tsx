@@ -60,12 +60,12 @@ const Hero = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600"> consciente y resiliente</span>
             </h1>
             
-            <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed text-left" role="text">
+            <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed text-justify" role="text">
               En Origamis creemos que el bienestar se construye paso a paso, juntos.
               Acompañamos a personas, parejas y organizaciones a recuperar la calma, fortalecer vínculos y crear espacios donde la vida y el trabajo se sientan más humanos.
             </p>
             
-            <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed text-left" role="text">
+            <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed text-justify" role="text">
               Con el apoyo de la psicología, la neurociencia y prácticas de autocuidado, entregamos herramientas profundas que ayudan a reducir el estrés, prevenir el desgaste y cultivar relaciones más sanas y significativas.
             </p>
 
@@ -160,8 +160,8 @@ const Hero = () => {
                     <Brain className="h-6 w-6 text-emerald-600" />
                   </div>
                   <div>
-                    <p className="text-sm sm:text-base font-semibold text-gray-900">IA Aplicada</p>
-                    <p className="text-xs sm:text-sm text-gray-600">Diagnósticos precisos</p>
+                    <p className="text-sm sm:text-base font-semibold text-gray-900">Servicios</p>
+                    <p className="text-xs sm:text-sm text-gray-600">Online y presencial</p>
                   </div>
                 </div>
               </div>
