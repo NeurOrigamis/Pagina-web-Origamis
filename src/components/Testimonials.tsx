@@ -103,11 +103,6 @@ const Testimonials = () => {
 
               {/* Profile */}
               <div className="flex items-center">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name}
-                  className="w-10 sm:w-12 h-10 sm:h-12 rounded-full object-cover mr-3 sm:mr-4"
-                />
                 <div>
                   <h4 className="text-sm sm:text-base font-semibold text-gray-900">{testimonial.name}</h4>
                   <p className="text-gray-600 text-xs sm:text-sm">{testimonial.profession}</p>
