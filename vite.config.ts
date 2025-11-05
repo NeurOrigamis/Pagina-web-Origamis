@@ -1,11 +1,11 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/nombre-de-tu-repositorio/',
+  base: '/Pag-na-wen-Origamis/',  // 👈 nombre exacto del repositorio en GitHub
+  build: { outDir: 'docs' },      // 👈 carpeta donde se guardará el build para GitHub Pages
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-});
+})
