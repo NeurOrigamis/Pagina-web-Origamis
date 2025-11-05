@@ -16,8 +16,8 @@ const Hero = () => {
       service: "Terapia de Pareja"
     },
     {
-      url: "https://www.origamis.cl/wp-content/uploads/2025/09/Organizacional.png",
-      alt: "Equipo empresarial en taller de bienestar - Consultoría organizacional",
+      url: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      alt: "Equipo empresarial celebrando con las manos levantadas - Consultoría organizacional",
       service: "Consultoría Empresarial"
     },
     {

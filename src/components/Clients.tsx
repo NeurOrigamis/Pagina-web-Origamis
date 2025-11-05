@@ -16,7 +16,7 @@ const Clients = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600"> Nuestra Experiencia</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-            Organizaciones líderes que han transformado el bienestar de sus equipos con nuestros programas especializados
+            Organizaciones líderes que han trabajado con nosotros fortaleciendo el bienestar sus equipos
           </p>
         </div>
 
@@ -27,28 +27,28 @@ const Clients = () => {
               {/* Original set of images */}
               <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
                 <img 
-                  src="https://www.origamis.cl/wp-content/uploads/2025/09/3-scaled.png" 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/11/Logo-Origamis-scaled.png" 
                   alt="Logos de clientes - Grupo 1"
                   className="w-full h-auto object-contain"
                 />
               </div>
               <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
                 <img 
-                  src="https://www.origamis.cl/wp-content/uploads/2025/09/4-scaled.png" 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/11/Logo-Origamis-5.png" 
                   alt="Logos de clientes - Grupo 2"
                   className="w-full h-auto object-contain"
                 />
               </div>
               <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
                 <img 
-                  src="https://www.origamis.cl/wp-content/uploads/2025/09/5-scaled.png" 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/11/Logo-Origamis-4-scaled.png" 
                   alt="Logos de clientes - Grupo 3"
                   className="w-full h-auto object-contain"
                 />
               </div>
               <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
                 <img 
-                  src="https://www.origamis.cl/wp-content/uploads/2025/09/6-scaled.png" 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/11/Logo-Origamis-3-scaled.png" 
                   alt="Logos de clientes - Grupo 4"
                   className="w-full h-auto object-contain"
                 />
@@ -56,28 +56,28 @@ const Clients = () => {
               {/* Duplicate set for infinite seamless loop */}
               <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
                 <img 
-                  src="https://www.origamis.cl/wp-content/uploads/2025/09/3-scaled.png" 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/11/Logo-Origamis-scaled.png" 
                   alt="Logos de clientes - Grupo 1"
                   className="w-full h-auto object-contain"
                 />
               </div>
               <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
                 <img 
-                  src="https://www.origamis.cl/wp-content/uploads/2025/09/4-scaled.png" 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/11/Logo-Origamis-5.png" 
                   alt="Logos de clientes - Grupo 2"
                   className="w-full h-auto object-contain"
                 />
               </div>
               <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
                 <img 
-                  src="https://www.origamis.cl/wp-content/uploads/2025/09/5-scaled.png" 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/11/Logo-Origamis-4-scaled.png" 
                   alt="Logos de clientes - Grupo 3"
                   className="w-full h-auto object-contain"
                 />
               </div>
               <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2">
                 <img 
-                  src="https://www.origamis.cl/wp-content/uploads/2025/09/6-scaled.png" 
+                  src="https://www.origamis.cl/wp-content/uploads/2025/11/Logo-Origamis-3-scaled.png" 
                   alt="Logos de clientes - Grupo 4"
                   className="w-full h-auto object-contain"
                 />
